@@ -1,5 +1,10 @@
 # Countries-API
-Create an application to convert arabic numbers to roman numerals.
+
+Test GET requests: <br/>
+  *Retrieve Europe Union Top10 countries by **population** in descending order* <br/>
+  *Retrieve Europe Union Top10 countries by **density** in descending order* <br/>
+  *Retrieve Europe Union country by name, any country outside EU will return BadRequest.*
+  
 ![My Image](country.PNG)
 ![My Image](country2.PNG)
 ## To Start it:
