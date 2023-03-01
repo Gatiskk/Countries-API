@@ -6,7 +6,7 @@ public static class GetCountriesServices
 {
     public static IEnumerable<CountryModel> EuropeUnionCountry(List<CountryModel> country)
     {
-        //In EU regionbloc api returns 31country.
+        //In EU region api returns 31country.
         //Countries with independent = false is not in EU, so this method sorts out to return only EU countries
         var euCountries = country.Where(c => c.Independent);
 
@@ -31,8 +31,7 @@ public static class GetCountriesServices
 
     public static IEnumerable<SingleCountryModel> MakeSearchedCountryObject(List<CountryModel> country)
     {
-        return country.Select(c =>
-            new SingleCountryModel
+        return country.Select(c => new SingleCountryModel
             {
                 Area = c.Area,
                 Population = c.Population,
